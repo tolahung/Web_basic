@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Praise&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* Trang chủ (các trang khác viết vào section của trang chủ) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Praise', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #000000;
+}
+
+p{
+    color: white;
+}
+
+.header {
+    background: #333333;
+    color: #f4f4f4;
+    padding: 0 10%;
+    height: 250px;
+}
+
+
+/* =============header========================== */
+
+.header .header-top {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .header-contact {
+    display: flex;
+    text-align: center;
+}
+
+/* ========================================== */
+
+.header .header-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border: 1px solid rgb(131, 131, 131);
+    border-right: none;
+    border-left: none;
+}
+
+.header .header-mid .header-mid_logo {
+    width: 100px;
+}
+
+.header .header-mid .header-mid_search {
+    width: 40%;
+}
+
+.header .header-mid .header-mid_search form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-mid .header-mid_search form input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+}
+
+.header .header-mid .header-mid_search form button {
+    border: none;
+    padding: 10px 30px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background: orange;
+    color: #fff;
+}
+
+.header .header-mid .sign-in {
+    display: flex;
+    align-items: center;
+}
+
+.header .header-mid .sign-in button {
+    margin: 0px 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+}
+
+
+/* ============================================== */
+
+.header .header-bot {
+    padding: 15px 0px 20px;
+}
+
+.header .header-bot ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-bot ul li {
+    margin: 0px 20px;
+}
+
+.header .header-bot ul li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.header .header-bot ul .active a {
+    color: #c89979;
+    padding: 0px 0px 5px;
+    border-bottom: 1px solid;
+}
+
+.header .header-bot ul li:hover a {
+    color: #c89979;
+}
+
+/* Menu đa cấp */
+li {
+    position: relative;
+}
+
+li a {
+    padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.header .header-bot .sub-menu {
+    display: none;
+    position: absolute;
+    top: 10;
+    width: 200px;
+    background-color: #333333;
+    color: white;
+}
+
+li:hover>.sub-menu {
+    display: block;
+}
+
+.header-bot li:hover .sub-menu {
+    display: block;
+}
+
+/* ==================body========================== */
+.section {
+    width: 80%;
+    height: 600px;
+    float: left;
+    background-color: white;
+    margin: 0 10%;
+}
+
+.section .banner img {
+    width: 100%;
+    height: 600px;
+}
+.sanphambanchay
+{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    float: left;
+}
+.sanphambanchaynamnu
+{
+    width: 50%;
+    height:350px;
+    border: 1px;
+    margin: 0 10%;
+    padding:30px;
+   
+}
+.sanphambanchaynamnu img
+{
+    padding:40px;
+}
+.sanphambanchaynamnu:hover
+{
+    transform: scale(1.5,1.5);
+    transition: 0.5s;
+}
+.sanphambanchaynamnu h3
+{
+    color:goldenrod;
+    text-transform: uppercase;
+}
+/* footer*/
+
+.footer {
+    background: #333333;
+    color: #fff;
+    width: 100%;
+    height: 300px;
+    margin: 25% 0;
+    float:left;
+}
+
+.footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.footer .footer-top .footer-top_item {
+    flex: 1;
+    padding: 10px 20px 10px 10px;
+}
+
+.footer .footer-top .footer-top_item ul li {
+    margin-bottom: 15px;
+}
+
+.footer .footer-top .footer-top_item ul li:first-child {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px
+}
+
+
+/* =============================================================*/
+/* Trang đăng kí */
+#formdangki {
+    width: 50%;
+    height: 700px;
+    float: left;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin:5% 20%;
+    padding:30px 10%;
+}
+.section #formdangki table td{
+    vertical-align: top;
+}
+.section #formdangki h2,
+h3 {
+    text-align: center;
+}
+
+.section input {
+    width: 200px;
+    border-radius:10px;
+    height:30px;
+    margin:5px 0 ;
+}
+
+#gender {
+    width: 50px;
+    height:15px;
+}
+
+.section #formdangki button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+/*Trang đăng nhập */
+.section .formdangnhap {
+    width: 39%;
+    height: 400px;
+    float: left;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin:5% 20%;
+    padding:30px 10%;
+}
+.section .formdangnhap h2{
+    text-align: center;
+}
+.section .formdangnhap input {
+    width: 300px;
+    border-radius:10px;
+    height:40px;
+    margin:5px 0 ;
+}
+#nutdangnhap 
+{
+    width:100px;
+    height:50px;
+    background-color:orange;
+    color:white;
+    margin:10px 100px;
+}
+
+.btndk{
+    margin-left: 10px;
+}
+.formdangnhap a
+{
+    color:gray;
+    text-align: center;
+}
+/*Trang Tissot (mấy ông đặt tên class y hệt đi khỏi làm css thêm)*/
+.tissot {
+width: 100%;
+height:auto;
+}
+#title {
+    text-align: center;
+    color: #f4f4f4;
+}
+.Product{
+ margin-left: 200px;
+}
+
+.Product .Product-detail {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin: 50px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #333333;
+    flex-wrap: wrap;
+}
+
+.Product .Product-detail img {
+    width: 70%;
+    padding: 50px;
+}
+
+.Product .Product-detail button {
+    width: 200px;
+    height: 30px;
+    background-color: darksalmon;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.Product .Product-detail img {
+    transition: 0.5;
+}
+
+.Product .Product-detail img:hover {
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.Product-detail .price {
+    font-size: 20px;
+    color: orange;
+}
+.Product-detail button:hover
+{
+    background-color: chartreuse;
+    transition: 0.5s;
+}
+/*------------------------------*/
+/* Trang giới thiệu*/ 
+.banner-gt {
+    height: 650px;
+    width: 100%;
+}
+
+.section-gt {
+    width: 100%;
+    height: auto;
+    padding: 10%;
+
+}
+
+.footer-gt {
+    clear: both;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.footer-gt table {
+    font-size: 30px;
+    text-align: center;
+}
+
+.casio {
+    height: auto;
+    clear: both;
+}
+
+.footer-casio {
+    clear: both;
+    background: #333333;
+    color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.gioithieu {
+    font-size: 15px;
+}
+
+/* Cái này slide chuyển tự động cho banner*/
+
+#slideshow 
+{
+    overflow: hidden;
+    height: 400px;
+    width: 1519px;
+    
+    
+    
+}
+.slide-wrapper 
+{
+    width: 400%;
+    -webkit-animation: slide 10s ease infinite;
+}
+.slide 
+{
+    float: left;
+    width: 1519px; 
+    height: 400px;
+}
+@-webkit-keyframes slide 
+{
+    10% {margin-left: 0px;}
+    20% {margin-left: -1519px;}   
+    30% {margin-left: -1519px;}
+    
+}
+/*--------------------------------------*/

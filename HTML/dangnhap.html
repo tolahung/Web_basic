@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../IMG/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-top">
+                <div class="header-contact">
+                    <p>Trường Đại học Công Nghiệp TPHCM</p>
+                </div>
+            </div>
+            <div class="header-mid">
+                <div class="header-mid_logo">
+                    <img src="../IMG/logo2.png">
+                </div>
+                <div class="header-mid_search">
+                    <form name="search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="sign-in">
+                    <button><a href="./dangnhap.html">Đăng nhập</a></button>
+                    <button><a href="./dangki.html">Đăng ký</a></button>
+                </div>
+            </div>
+            <div class="header-bot">
+                <ul>
+                    <li><a href="../HTML/index.html">Trang chủ</a></li>
+                    <li><a href="../HTML/Gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="">Đồng hồ nam&nbsp; <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./Seiko.html">SEIKO</a></li>
+                            <li><a href="./CASIO_MEN.html">CASIO</a></li>
+                            <li><a href="./CalvinKlein.html">KALVIN KLEIN</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="">Đồng hồ nữ&nbsp; <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="./TISSOT.html">TISSOT</a></li>
+                            <li><a href="./GUCCI.html">GUCCI</a></li>
+                            <li><a href="./CavinKleinNu.html">KALVIN KLEIN</a></li>
+
+                        </ul>
+                    </li>
+            </div>
+        </div>
+        <div class="section">
+            <div class="formdangnhap">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <h2>ĐĂNG NHẬP</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tên đăng nhập:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="username" id="username"
+                                placeholder="Nhập vào tên đăng nhập" required="[A-Za-z]"></td>
+                                <i style="color: red;" id="tbuser" class="text-danger"></i>
+                    </tr>
+                    <tr>
+                        <td>Mật khẩu:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" required id="user-password" placeholder="Nhập mật khẩu"></td>
+                        <i style="color: red;" id="tbmatkhau" class="text-danger"></i>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Đăng nhập" id="nutdangnhap"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><i><a href="#">Quên mật khẩu</a> hoặc chưa có tài khoản? <a href="../HTML/dangki.html">Đăng kí</a></i></td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top_item">
+                    <ul>
+                        <li>THÀNH VIÊN THỰC HIỆN</li>
+                        <li>Nguyễn Thị Thúy An</li>
+                    </ul>
+                </div>
+                <div class="footer-top_item">
+                    <ul>
+                        <li>MÃ SỐ SINH VIÊN</li>
+                        <li>20018201</li>
+                    </ul>
+                </div>
+                <div class="footer-top_item">
+                    <ul>
+                        <li>ĐỊA CHỈ VÀ LIÊN HỆ</li>
+                        <li>Số 12 Nguyễn Văn Bảo, phường 4, quận Gò Vấp,TPHCM</li>
+                        <li>Email:annguyen43969@gmail.com</li>
+                        <li>Số điện thoại:0385243969</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
